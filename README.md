@@ -87,8 +87,8 @@ Elbow Method
 Elbow method gives us an idea on what a good k number of clusters would be based on the sum of squared distance (SSE) between data points and their assigned clusters’ centroids. We pick k at the spot where SSE starts to flatten out and forming an elbow. We’ll use the geyser dataset and evaluate SSE for different values of k and see where the curve might form an elbow and flatten out. Below are the plots obtained using this method
 
 ![image 9](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%209.png)
-![image 11](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%211.png)
-![image 13](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%213.png)
+![image 11](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%2011.png)
+![image 13](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%2013.png)
 
 Silhouette analysis
 
@@ -98,7 +98,7 @@ Silhouette analysis can be used to determine the degree of separation between cl
 * Compute the average distance from all data points in the closest cluster (bi).
 * Compute the coefficient:
 
-![image 16](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%216.png)
+![image 16](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%2016.png)
 
 The coefficient can take values in the interval [-1, 1].
 * If it is 0 –> the sample is very close to the neighboring clusters.
@@ -109,7 +109,7 @@ Therefore, we want the coefficients to be as big as possible and close to 1 to h
 
 Based on the results obtained from these metrics, best relationship is between the Age and Spending Score (1-100) as shown below
 
-![image 15](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%215.png)
+![image 15](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%2015.png)
 
 
 ## Conclusion
