@@ -87,7 +87,7 @@ Elbow Method
 Elbow method gives us an idea on what a good k number of clusters would be based on the sum of squared distance (SSE) between data points and their assigned clusters’ centroids. We pick k at the spot where SSE starts to flatten out and forming an elbow. We’ll use the geyser dataset and evaluate SSE for different values of k and see where the curve might form an elbow and flatten out. Below are the plots obtained using this method
 
 ![image 9](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%209.png)
-![image 11](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%2010.png)
+![image 11](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%2011.png)
 ![image 13](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%2013.png)
 
 Silhouette analysis
