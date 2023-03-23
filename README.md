@@ -46,7 +46,7 @@ Segmentation allows marketers to better tailor their marketing efforts to variou
 **Data Source**:https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
 
 ## Data Collection
-The datasets used in this project were downloaded from https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud. I then read the two csv files using the pd.read_csv() command.
+The datasets used in this project were downloaded from https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python. I then read the two csv files using the pd.read_csv() command.
 
 ## Data Cleaning
 After downloading the data, I needed to clean it up so that it was usable for our model. In our case, the dataset did not contain any missing values and the data was of the correct format.
@@ -72,7 +72,7 @@ From now on we will be using sklearn implementation of kmeans. Few thing to note
 * tol is the within-cluster variation metric used to declare convergence.
 * The default of init is k-means++ which is supposed to yield a better results than just random initialization of centroids.
 
-Next, we'll calculate the sum of squared error as well as the silhouetter values using different number of clusters then plot the results.
+Next, we'll calculate the sum of squared error using the elbow method as well as the silhouette score using different number of clusters then plot the results.
 
 ## Model Performance
 Contrary to supervised learning where we have the ground truth to evaluate the model’s performance, clustering analysis doesn’t have a solid evaluation metric that we can use to evaluate the outcome of different clustering algorithms. Moreover, since kmeans requires k as an input and doesn’t learn it from data, there is no right answer in terms of the number of clusters that we should have in any problem.
@@ -107,12 +107,15 @@ The coefficient can take values in the interval [-1, 1].
 
 Therefore, we want the coefficients to be as big as possible and close to 1 to have a good clusters.
 
-Based on the results obtained from these metrics, best relationship is between the Age and Spending Score (1-100) as shown below
+For clustering problems, we often choose the result that has the highest silhouette score, since it measures the seperation between the clusters. In general, the higher the score, the far apart the clusters are, which is often good since we do not want to have an overlapping within the clusters that might lead to incorrect grouping of data. In our case, we can see from the silhouette score table that the best relationship is between the Age and Spending Score (1-100) having an Silhouette score of 0.499739 when compared to the other relationships. Therefore, the marketing team of the mall should focus on this group when conducting customer segmentation.
 
 ![image 15](https://github.com/MusaMasango/Customer-Segmentation-Project/blob/main/image%2015.png)
 
 
 ## Conclusion
-1. In this python machine learning project, I built a clustering model using the kmeans algorithm. This project aims to determine the types of customers (target customers) who can easily convert into loyal customers so that the marketing team can make an informed decision about their approach. 
-2. As the above table shows, the age vs spending score (1-100) relation has the best average silhouette score of around 0.499739, however, when we consider the other relations, the average silhouette score decreased dramatically to around 0.100144 and 0.089018 respectively.
-3. Elbow method in selecting number of clusters doesn’t usually work because the error function is monotonically decreasing for all ks, thus it is advisable to use the silhoutte analysis instead.
+1. In this python machine learning project, I built a clustering model using the kmeans algorithm. This project aims to determine the types of customers (target customers) who can easily convert into loyal customers so that the marketing team can make an informed decision about their approach.
+2.
+3.
+4.
+5.
+6. Elbow method in selecting number of clusters doesn’t usually work because the error function is monotonically decreasing for all ks, thus it is advisable to use the silhoutte analysis instead.
