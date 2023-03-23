@@ -15,6 +15,7 @@ In business-to-consumer marketing, companies often segment customers according t
 * Gender
 * Marital Status
 * Location (urban, surburban, rural)
+* Income
 
 
 ## Objective
