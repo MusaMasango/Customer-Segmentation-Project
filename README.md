@@ -1,4 +1,4 @@
-## Customer-Segmentation-Project
+## Customer-Segmentation-Clustering-Project
 
 ## Introduction
 Customer segmentation is the process of dividing customers into groups based on common characteristics so companies can market to each group effectively and appropriately.
@@ -114,8 +114,11 @@ For clustering problems, we often choose the result that has the highest silhoue
 
 ## Conclusion
 1. In this python machine learning project, I built a clustering model using the kmeans algorithm. This project aims to determine the types of customers (target customers) who can easily convert into loyal customers so that the marketing team can make an informed decision about their approach.
-2.
-3.
-4.
-5.
-6. Elbow method in selecting number of clusters doesn’t usually work because the error function is monotonically decreasing for all ks, thus it is advisable to use the silhoutte analysis instead.
+2. The age vs annual income scatter plot shows that the highest earning customers are males in their early 30's. Overall, the distribution of the data within the scatter plot shows that majority of the customers are between the age of 20 to 50 and earn between 20 - 80 k$ 
+3. The age vs spending score scatter plot shows that the highest spending customers are between the age of 20 to 40. Based on this data, the marketing team can focus on these individuals when promoting their products/services in order to increase sales. Overall, the distribution of the data within the scatter plot shows that majority of the customers with a spending score of 60 and higher are less than 40 years while the customers who are 40 years or older have a spending score of 60 or less. 
+4. The annual income vs spending score scatter plot shows that the majority of the customers earn between 40 - 70 k and have a spending score between 40 - 60. In addition, the highest spending customers earns 20 k while the lowest spending customer earns 80 k. 
+5. It is evident from the correlation table that the age and the annual income have a negative correlation with a correlation coefficient of -0.01. Similarly the age and the spending score have a strong negative correlation with a correlation coefficient of -0.33. This shows that as the age increases both the annual income and spending score decrease. Lastly, the annual income ans the spending score has a positive correlation having a correlation coefficient of 0.01. This shows that as the annual income increases, the spending score is more likely to increase. 
+6. The age vs spending score scatter plot shows 4 clusters representing different customer groups. The group of interest in this case green cluster since most of the customers in that have a high spending score compared to the other groups, thus it is advisable for the marketing team of the mall to focus on these customers in order to increase customer base within the mall.
+7. The above annual income vs spending score scatter plot shows 4 clusters representing different customer groups. The group of interest in this case yellow cluster since most of the customers in that cluster have both a high spending score and annual income compared to the other groups, thus it is advisable for the marketing team of the mall to focus on these customers in order to increase customer base within the mall.
+8. For clustering problems, we often choose the result that has the highest silhouette score, since it measures the seperation between the clusters. In general, the higher the score, the far apart the clusters are, which is often good since we do not want to have an overlapping within the clusters that might lead to incorrect grouping of data. In our case, we can see from the silhouette score table that the best relationship is between the Age and Spending Score (1-100) having an Silhouette score of 0.499739 when compared to the other relationships. Therefore, the marketing team of the mall should focus on this group when conducting customer segmentation.
+
